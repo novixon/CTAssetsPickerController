@@ -13,6 +13,11 @@
 
 + (UIImage *)ctassetsPickerControllerImageNamed:(NSString *)name
 {
+    UIImage *image = [UIImage imageNamed:name];
+    if (image != nil) {
+        return image;
+    }
+    
     if ([UIImage respondsToSelector:@selector(imageNamed:inBundle:compatibleWithTraitCollection:)])
     {
         return [UIImage imageNamed:name inBundle:[NSBundle ctassetsPickerControllerBundle] compatibleWithTraitCollection:nil];
