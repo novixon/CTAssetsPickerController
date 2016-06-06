@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'CTAssetsPickerController'
-  s.version          = '2.9.7'
+  s.version          = '2.9.8'
   s.summary          = 'iOS control that allows picking multiple photos and videos from user\'s photo library.'
 
   s.description      = <<-DESC
@@ -15,10 +15,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Clement T' => 'chiunam@gmail.com' }
   s.platform         = :ios, '7.0'
-  s.source           = { :git => 'https://github.com/novixon/CTAssetsPickerController', :tag => 'v2.9.7' }
+  s.source           = { :git => 'https://github.com/novixon/CTAssetsPickerController', :tag => 'v2.9.8' }
   s.source_files     = 'CTAssetsPickerController/*.{h,m}'
-  s.resource_bundles = { 'CTAssetsPickerController' => ['CTAssetsPickerController/Resources/*.lproj'] }
-  s.resources        = 'CTAssetsPickerController/Resources/CTAssetsPicker.xcassets'
+  s.resource_bundles = { 'CTAssetsPickerController' => ['Resources/*.lproj'] }
+  s.resources        = 'Resources/CTAssetsPicker.xcassets'
   s.frameworks       = 'AssetsLibrary', 'MediaPlayer'
   s.requires_arc     = true
 end
